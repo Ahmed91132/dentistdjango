@@ -1,0 +1,258 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+
+    <title>{% block title %}Ahmed website {% endblock %}</title>
+
+    <!-- Bootstrap Core CSS -->
+
+    <link href="{% static 'website/css/bootstrap.css' %}" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+
+    <!-- Custom Fonts -->
+
+   <link href="{% static 'website/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+   <link href="{% static 'website/fonts.googleapis.com/css?family=Lato:400,300,100,700,900' %}" rel='stylesheet' type='text/css'>
+   <link href="{% static 'website/fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' %}" rel='stylesheet' type='text/css'>
+   <link href="{% static 'website/fonts.googleapis.com/css?family=Droid+Serif:400,700' %}" rel='stylesheet' type='text/css'>
+
+
+    <!-- Custom Animations -->
+
+    <link rel="stylesheet" href="{% static 'website/css/animate.css' %}">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid top-nav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand logo-top page-scroll" href="#header">
+                        <img class="img-responsive"  src="{% static 'website/img/logo.png' %}" alt="logo">
+                    </a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden nav-buttons">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="{% url 'home' %}">Home</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#team">Team</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#pricing">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#clients">Clients</a>
+                        </li>
+                        
+                        <li>
+                            <a class="page-scroll" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+<!-- Footer -->
+    <footer>
+        <div class="container-fluid wrapper">
+            <div class="col-lg-12 footer-info">
+                <a class="footer-logo" href="#header">
+                    <img class="img-responsive" src="{% static 'website/img/footer-logo.png' %}" alt="logo-footer">
+                </a>
+                <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+            </div>
+            <div class="col-sm-6 col-md-12 social-icons-footer">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-pinterest"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-google"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 copyright-bottom">
+                <span class="copyright">Copyright &copy; xBe 2016 Created By <a href="http://templatestock" target="_blank">Template Stock</a> </span>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll-up -->
+    <div class="scroll-up">
+        <a href="#header" class="page-scroll"><i class="fa fa-angle-up"></i></a>
+    </div>
+    <div id="theme-settings">
+        <div id="settings-button">
+        </div>
+        <div class="color">
+            <span class="settings-title">Theme color selector</span>
+            <ul class="gradients">
+                <li>
+                    <div class="gradient1">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient2">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient3">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient4">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient5">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient6">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient7">
+                    </div>
+                </li>
+                <li>
+                    <div class="gradient8">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="{% static 'website/img/portfolio/flattastic-free.jpg' %}" alt="modal">
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <strong>Want this UI kit sample?</strong>You can download it for free, courtesy of <a href="#">edubd.net</a>, or you can download it <a href="#">here</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: August 9, 2013</li>
+                                <li>Client: Web Designer Depot</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Project Name</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-responsive img-centered" src="{% static 'website/img/portfolio/flat.jpg' %}" alt="modal">
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                            <p>
+                                <strong>Want this flat style illustrations? </strong>You can download it for free, courtesy of <a href="#">edubd.net</a>, or you can download it <a href="#">here</a>.</p>
+                            <ul class="list-inline">
+                                <li>Date: February 20, 2015</li>
+                                <li>Client: Web Designer Depot</li>
+                                <li>Category: Graphic Design</li>
+                            </ul>
+                            <button type="button" class="btn btn-xl" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="{% static 'website/js/jquery.js' %}"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <!-- Color Settings script -->
+    <script src="{% static 'website/js/settings-script.js' %}"></script>
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'website/js/jquery.easing.min.js' %}"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="{% static 'website/js/jqBootstrapValidation.js' %}"></script>
+    
+    <!-- SmoothScroll script -->
+    <script src="{% static 'website/js/smoothscroll.js' %}"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/xBe.js"></script>
+    <!-- Isotope -->
+    <script type="text/javascript" src="{% static 'website/js/jquery.isotope.min.js' %}"></script>
+    <!-- Google Map -->
+    <script src="{% static 'website/maps.googleapis.com/maps/api/js?extension=.js&output=embed' %}"></script>
+    <!-- Footer Reveal scirt -->
+    <script src="{% static 'website/js/footer-reveal.js' %}"></script>
+
+</body>
+
+</html>
